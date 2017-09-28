@@ -1,0 +1,72 @@
+<problem>
+	<model>15</model>
+	<!-- The model code 15 is LACGFP10 -->
+	<samples>80000</samples>
+	<outputs>1</outputs>
+	<timepoints>5</timepoints>
+	<parameters>5</parameters>
+	<priors>
+		<prior>
+			<index>1</index> <dist>uniform</dist> <lb>1</lb> <ub>50</ub>
+			<!-- GFP transcription rate from unoccupied Lac promoter (PLac). Units: molecules/hour. -->
+			<!-- Pelechano et al. PLoS ONE 2010 found that transcription rate of >90% of YEAST genes is between 2 and 30 molecules/hour -->
+			<!-- ATT!! Study was done in YEAST, larger interval is used here -->
+		</prior>
+		<prior>
+			<index>2</index> <dist>uniform</dist> <lb>1e-10</lb> <ub>30</ub>
+			<!-- gfp mRNA half-life. Units: 1/hour. -->
+			<!-- Half-life of 1.5 min to 7 hours -->
+			<!-- The median half-life of an E. coli mRNA is 3.69 min (Bernstein et al. PNAS 2004) -->
+		</prior>
+		<prior>
+			<index>3</index> <dist>uniform</dist> <lb>1</lb> <ub>50</ub>
+			<!-- GFP protein translation rate. Units: molecules/(transcript*hour) -->
+			<!-- The average numbers of protein per transcript in the literature vary considerably. -->
+			<!-- (Arkin et al. Genetics 1998 suggests about 10, Lu et al. Nat Biotech 2007 report about 540) -->
+		</prior>
+		<prior>
+			<index>4</index> <dist>uniform</dist> <lb>1e-10</lb> <ub>20</ub>
+			<!-- GFP degradation rate. Units: 1/hour. -->
+			<!-- Half-life of 2 min to 7 hours -->
+		</prior>
+		<prior>
+			<index>5</index> <dist>uniform</dist> <lb>0.1</lb> <ub>20</ub>
+			<!-- GFP maturation time. Units: 1/hour. -->
+			<!-- "Half-maturation time" of 2 min to 7 hours -->
+		</prior>
+	</priors>
+	<scaling>
+		<mean>
+			<index>1</index> <dist>uniform</dist> <lb>10</lb> <ub>100</ub>		
+		</mean>
+		<std>
+			<index>1</index> <dist>uniform</dist> <lb>10</lb> <ub>100</ub>	
+		</std>
+	</scaling>
+	<data mode = 'text' scale = 'linear'>
+		<background>
+			<fcsfile>/Users/lillaccg/Work/Code/C/2012/mpiStochEst/mpismc/TD-ovn.fcs</fcsfile>
+			<measuredspecies>
+				<measurement>
+					<index>1</index> <description>GFP</description> <fcsparam>7</fcsparam>
+				</measurement>		
+			</measuredspecies>
+		</background>
+		<datafile>/Users/lillaccg/Work/Code/C/2012/mpiStochEst/data_lacgfp_del.txt</datafile>
+		<timept>
+			<index>1</index> <time>0.0</time> <unit>hours</unit>
+		</timept>
+		<timept>
+			<index>2</index> <time>2.0</time> <unit>hours</unit>
+		</timept>
+		<timept>
+			<index>3</index> <time>3.0</time> <unit>hours</unit>
+		</timept>
+		<timept>
+			<index>4</index> <time>4.0</time> <unit>hours</unit>
+		</timept>
+		<timept>
+			<index>5</index> <time>5.0</time> <unit>hours</unit>
+		</timept>
+	</data>
+</problem>

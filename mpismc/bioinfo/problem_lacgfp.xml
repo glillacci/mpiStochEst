@@ -1,0 +1,127 @@
+<problem>
+	<model>LACGFP</model>
+	<samples>80000</samples>
+	<outputs>1</outputs>
+	<timepoints>5</timepoints>
+	<parameters>21</parameters>
+	<priors>
+		<prior>
+			<index>1</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>2</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>3</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>4</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>5</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>6</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>7</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>8</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>9</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>10</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>11</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>12</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>13</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>14</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>15</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>16</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>17</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>18</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>19</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>20</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+		<prior>
+			<index>21</index> <dist>uniform</dist> <lb>1.0e-10</lb> <ub>100</ub>
+		</prior>
+	</priors>
+	<data>
+		<background>
+			<fcsfile>/Users/lillaccg/Work/Code/C/2012/mpiStochEst/mpiabck/bg.fcs</fcsfile>
+			<measuredspecies>
+				<measurement>
+					<index>1</index> <description>GFP</description> <fcsparam>7</fcsparam>
+				</measurement>		
+			</measuredspecies>
+		</background>
+		<timept>
+			<index>1</index> <time>0.0</time> <unit>hours</unit>
+			<fcsfile>/Users/lillaccg/Work/Code/C/2012/mpiStochEst/mpiabck/overnight.fcs</fcsfile>
+			<measuredspecies>
+				<measurement>
+					<index>1</index> <description>GFP</description> <fcsparam>7</fcsparam>
+				</measurement>		
+			</measuredspecies>
+		</timept>
+		<timept>
+			<index>2</index> <time>2.0</time> <unit>hours</unit>
+			<fcsfile>/Users/lillaccg/Work/Code/C/2012/mpiStochEst/mpiabck/10 uM - 2 h.fcs</fcsfile>
+			<measuredspecies>
+				<measurement>
+					<index>1</index> <description>GFP</description> <fcsparam>7</fcsparam>
+				</measurement>		
+			</measuredspecies>
+		</timept>
+		<timept>
+			<index>3</index> <time>3.0</time> <unit>hours</unit>
+			<fcsfile>/Users/lillaccg/Work/Code/C/2012/mpiStochEst/mpiabck/10 uM - 3 h.fcs</fcsfile>
+			<measuredspecies>
+				<measurement>
+					<index>1</index> <description>GFP</description> <fcsparam>7</fcsparam>
+				</measurement>		
+			</measuredspecies>
+		</timept>
+		<timept>
+			<index>4</index> <time>4.0</time> <unit>hours</unit>
+			<fcsfile>/Users/lillaccg/Work/Code/C/2012/mpiStochEst/mpiabck/10 uM - 4 h.fcs</fcsfile>
+			<measuredspecies>
+				<measurement>
+					<index>1</index> <description>GFP</description> <fcsparam>7</fcsparam>
+				</measurement>		
+			</measuredspecies>
+		</timept>
+		<timept>
+			<index>5</index> <time>5.0</time> <unit>hours</unit>
+			<fcsfile>/Users/lillaccg/Work/Code/C/2012/mpiStochEst/mpiabck/10 uM - 5 h.fcs</fcsfile>
+			<measuredspecies>
+				<measurement>
+					<index>1</index> <description>GFP</description> <fcsparam>7</fcsparam>
+				</measurement>		
+			</measuredspecies>
+		</timept>
+	</data>
+</problem>
