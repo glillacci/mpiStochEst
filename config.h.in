@@ -1,23 +1,5 @@
 /* config.h.in.  Generated from configure.ac by autoheader.  */
 
-/* Define to 1 if you have the `gsl' library (-lgsl). */
-#undef HAVE_LIBGSL
-
-/* Define to 1 if you have the `gslcblas' library (-lgslcblas). */
-#undef HAVE_LIBGSLCBLAS
-
-/* Define to 1 if you have the `m' library (-lm). */
-#undef HAVE_LIBM
-
-/* Define to 1 if you have the `parestlib' library (-lparestlib). */
-#undef HAVE_LIBPARESTLIB
-
-/* Define to 1 if you have the `stochmod' library (-lstochmod). */
-#undef HAVE_LIBSTOCHMOD
-
-/* Define to 1 if you have the `xml2' library (-lxml2). */
-#undef HAVE_LIBXML2
-
 /* Name of package */
 #undef PACKAGE
 
